@@ -1,10 +1,10 @@
 /*
 
 How many concrete classes?
-
+3
 
 How many abstract classes?
-
+1
 */
 
 public abstract class Ship {
@@ -36,8 +36,10 @@ public abstract class Ship {
 
 
   public void move() { 
-    // your code here
+    x++;
+    if (x > width)
+      x = 0;
   }
 
-  // abstract fire() method
+  public abstract void fire();
 }
